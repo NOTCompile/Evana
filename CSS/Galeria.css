@@ -78,17 +78,25 @@ main {
     color: #999;
     font-size: 1.1rem;
     font-weight: bold;
+    img{
+        height: 200px;
+    }
 }
 
 .item-info {
     padding: 20px;
     background: white;
+    h3{
+        margin-top: 20px;
+    }
 }
 
 .item-info h3 {
     color: #333;
     margin-bottom: 10px;
     font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .item-info p {
@@ -96,14 +104,12 @@ main {
     line-height: 1.5;
 }
 
-.categoria {
-    display: inline-block;
+.categoria {    
     background: #999;
     color: white;
-    padding: 5px 12px;
+    padding: 10px;
     border-radius: 5px;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    font-size: 0.9rem;    
 }
 
 .form-group {
