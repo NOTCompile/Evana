@@ -6,7 +6,7 @@ footer {
 
 .footer-container {
     width: 100%;
-    display: flex;    
+    display: flex;
     padding: 30px 0px;
 }
 
@@ -18,8 +18,8 @@ footer {
     border-right: 3px solid #393E46;
 }
 
-.contact-form h3{
-    padding: 0px 0px 10px 0px;    
+.contact-form h3 {
+    padding: 0px 0px 10px 0px;
     text-transform: uppercase;
 }
 
@@ -29,11 +29,12 @@ footer {
     margin-bottom: 25px;
 }
 
-.form-group label {    
+.form-group label {
     font-size: 15px;
 }
 
-.form-group input, textarea {
+.form-group input,
+textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid whitesmoke;
@@ -42,7 +43,7 @@ footer {
     font-family: 'Roboto';
 }
 
-textarea::placeholder{
+textarea::placeholder {
     color: white;
 }
 
@@ -60,7 +61,7 @@ textarea::placeholder{
     margin-bottom: 10px;
 }
 
-.submit-btn:hover{
+.submit-btn:hover {
     background-color: #222831;
     color: #00ADB5;
     border: 1px solid white;
@@ -73,7 +74,7 @@ textarea::placeholder{
     padding: 0px 160px;
 }
 
-.img-footer{
+.img-footer {
     width: 50%;
     margin-bottom: 20px;
 }
@@ -94,8 +95,7 @@ textarea::placeholder{
     transition-property: font-size;
     transition-duration: 4s;
     transition-delay: 5s;
-    font-size: 14px
-    border-radius: 50%;
+    font-size: 14px border-radius: 50%;
     width: 35px;
     height: 35px;
     background-color: #393E46;
@@ -106,16 +106,7 @@ textarea::placeholder{
     cursor: pointer;
 }
 
-.mensaje_footer{
-    padding: 8px;
-    width: 80px;
-    font-size: 18px;
-    align-items: center;
-    border: 1px solid #f3f3f3;
-    border-radius: 20px;
-    color: #ffffff;
-    background-color: #fffdfd;
-}
+
 
 .terms_and_conditions {
     padding: 12px;
@@ -126,12 +117,21 @@ textarea::placeholder{
     width: 100%;
     text-align: center;
     border-top: 1px solid #393E46;
-    padding-top: 20px;  
+    padding-top: 20px;
     font-size: 13px;
 }
 
+.btn-enviar {
+    background-color: #00ADB5;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
 
-@media(max-width: 600px){
+@media(max-width: 600px) {
     .footer-container {
         flex-direction: column;
         align-items: center;

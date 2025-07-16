@@ -1,15 +1,58 @@
 body {
     font-family: Arial;
-    margin: 50px;
     background: #f0f0f0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+        url(../Assets/Logo/fiesta-gente1.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
 }
 
 .contenedor {
     background: white;
+    width: 450px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+    border-radius: 10px;
+}
+
+.header {
+    background-color: #b5109f;
+    color: white;
     padding: 30px;
-    width: 350px;
-    margin: auto;
-    border: 1px solid #ccc;
+    border-radius: 10px 10px 0px 0px;
+    h1,p{
+        text-align: center;
+    }
+}
+
+.data {
+    padding: 10px 40px;
+}
+
+.groupbtn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.atras{
+    text-decoration: none;
+    padding: 10px;
+    background: white;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    color: #4CAF50;
+
+}
+
+.atras:hover{
+    background: #4CAF50;
+    color: white;
+    border: white;
 }
 
 input {
@@ -17,6 +60,11 @@ input {
     padding: 8px;
     margin: 5px 0 15px 0;
     border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+input:hover {
+    border: 1px solid #b5109f;
 }
 
 button {
@@ -24,8 +72,15 @@ button {
     margin: 5px;
     background: #4CAF50;
     color: white;
-    border: none;
+    border: 1px solid white;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: white;
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
 }
 
 .datos {

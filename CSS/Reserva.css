@@ -1,6 +1,8 @@
 body {
     font-family: Arial;
-    background: linear-gradient(135deg, #00020b 0%, #ececec 100%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+        url(../Assets/Logo/fiesta-gente1.jpg);
+    background-size: cover;
     margin: 0;
     padding: 20px;
 }
@@ -9,15 +11,31 @@ body {
     max-width: 800px;
     margin: 0 auto;
     background: white;
-
     overflow: hidden;
 }
 
 .header {
     background-color: #b5109f;
     color: white;
-    padding: 30px;
-    text-align: center;
+    padding: 30px;    
+    h1,p{
+        text-align: center;
+    }
+}
+
+.atras{
+    text-decoration: none;
+    padding: 10px;
+    background: white;
+    border: 1px solid #4CAF50;
+    border-radius: 10px;
+    color: #4CAF50;     
+}
+
+.atras:hover{
+    background: #4CAF50;
+    color: white;
+    border: white;
 }
 
 .header h1 {
@@ -80,6 +98,10 @@ textarea {
     cursor: pointer;
     width: 100%;
     margin-top: 20px;
+}
+
+.btn-submit:hover{    
+    background: #4CAF50;
 }
 
 
