@@ -1,0 +1,185 @@
+.logo {
+    transition: all 0.3s ease;
+}
+.logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    filter: brightness(1.2);
+}
+
+.contenedorInicio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-bg {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    width: 100%;
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+        url(/Assets/Logo/fiesta-gente1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 2s ease-in-out;
+    z-index: 1;
+}
+.img-bg:hover::before {
+    left: 100%;
+}
+
+.mensaje{
+    justify-items: center;
+    
+}
+
+.mensaje p{
+    font-size: 80px;
+    color: white;    
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.mensaje a{
+    padding: 20px;
+    width: 200px;
+    font-size: 20px;
+    border: 1px solid #FF4081;
+    border-radius: 20px;
+    color: white;
+    background-color: #0a0908;
+}
+
+.mensaje a:hover{
+    background-color: #FF4081;
+}
+
+.semi-titulo{
+    padding: 30px;
+    font-size: 50px;
+}
+
+/*Servicios*/
+.servicios{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 250px;
+    margin: 20px 0 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 530px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+.card img{
+    width: 398px;
+    height: 250px; 
+    border-radius: 15px 15px 0px 0px;
+    border-bottom: 1px solid #0a0908;
+}
+
+.card h3{
+    font-size: 20px;
+    padding: 10px 20px;    
+    text-align: center;
+}
+
+.card p{
+    font-size: 15px;
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+.card li{
+    font-size: 15px;
+    padding: 0px 20px;
+    text-align: left;
+}
+.card:hover {
+    transform: scale(120%);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    transition: 1s;
+}
+
+
+@media(max-width: 1700px){
+    .servicios{
+        padding: 30px 100px;
+    }
+}
+
+#btn-modo-oscuro {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 999;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        padding: 10px 16px;
+        border-radius: 8px;
+        font-size: 14px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    #btn-modo-oscuro:hover {
+        background-color: #444;
+        transform: scale(1.05);
+    }
+
+.modo-oscuro {
+        background-color: #121212;
+        color: #f0f0f0;
+    }
+
+    .modo-oscuro header,
+    .modo-oscuro footer,
+    .modo-oscuro .navbar,
+    .modo-oscuro .card {
+        background-color: #1e1e1e;
+        color: #f0f0f0;
+    }
+
+    .modo-oscuro a {
+        color: #8ec8ff;
+    }
+
+    .modo-oscuro input,
+    .modo-oscuro textarea {
+        background-color: #2a2a2a;
+        color: #fff;
+        border: 1px solid #444;
+    }
+
+    .modo-oscuro .card {
+        box-shadow: 0 0 10px #444;
+    }

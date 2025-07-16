@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/CSS/Reserva.css">
+
+    <title>EVANA</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>EVANA - Reserva tu Evento</h1>
+            <p>Crea momentos inolvidables</p>
+        </div>
+
+        <div class="form-container">
+            <div class="mensaje-exito" id="mensaje">
+                ¡Reserva realizada con éxito! 🎊
+            </div>
+
+            <form id="formulario">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Nombre Completo</label>
+                        <input type="text" id="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Teléfono</label>
+                        <input type="tel" id="telefono" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Tipo de Servicio</label>
+                        <select id="servicio" required>
+                            <option value="">Selecciona</option>
+                            <option value="Alquiler">Alquiler de Equipos</option>
+                            <option value="Animacion">Animación y Eventos</option>
+                            <option value="Decoracion">Decoración</option>
+                            <option value="Completo">Servicio Completo</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Tipo de Evento</label>
+                        <select id="tipoEvento" required>
+                            <option value="">Selecciona</option>
+                            <option value="Cumpleanos">Cumpleaños</option>
+                            <option value="Boda">Boda</option>
+                            <option value="Graduacion">Graduación</option>
+                            <option value="Baby Shower">Baby Shower</option>
+                            <option value="Corporativo">Evento Corporativo</option>
+                            <option value="Infantil">Fiesta Infantil</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Fecha del Evento</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Hora</label>
+                        <input type="time" id="hora" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Número de Invitados</label>
+                        <input type="number" id="invitados" required min="1">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Dirección del Evento</label>
+                    <input type="text" id="direccion" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Comentarios</label>
+                    <textarea id="comentarios"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Confirmar Reserva</button>
+            </form>
+        </div>
+
+        <div class="reservas-section">
+            <h3>Reservas Pendientes</h3>
+            <div id="listaReservas">
+                <div class="no-reservas">No hay reservas aún</div>
+            </div>
+        </div>
+    </div>
+<script src="/JS/Reserva.js"></script>
+</body>
+</html>

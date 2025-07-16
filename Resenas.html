@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reseñas de Clientes</title>
+    <link rel="stylesheet" href="/CSS/Global.css">
+    <link rel="stylesheet" href="/CSS/Navbar.css">
+    <link rel="stylesheet" href="/CSS/Footer.css">
+    <link rel="stylesheet" href="/CSS/Inicio.css">
+    <link rel="stylesheet" href="/CSS/Servicio_Alquiler.css">
+    <link rel="stylesheet" href="./CSS/ModoOscuro.css">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .review {
+            background-color: #2c2c2c;
+            border-left: 5px solid #ff69b4;
+            /* Rosa */
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .review h3 {
+            color: #ff69b4;
+            /* Rosa */
+            margin: 0 0 10px;
+        }
+
+        .stars {
+            color: gold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #6a0dad;
+            text-align: center;
+            padding: 15px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <button id="btn-modo-oscuro" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">🌙 Modo
+            Oscuro</button>
+        <script src="/JS/ModoOscuro.js"></script>
+        <a href="index.html" class="logo">
+            <img src="/Assets/Logo/Evana_Navbar.PNG" alt="Logo-Evana">
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a>Servicios</a>
+                    <ul>
+                        <li><a href="Servicio_Alquiler.html">Alquiler</a></li>
+                        <li><a href="Servicio_Animacion.html">Animacion</a></li>
+                        <li><a href="Servicio_Decoracion.html">Decoración</a></li>
+                    </ul>
+                </li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section>
+        <h1 style="margin-top: 100px">----> Reseñas de Nuestros Clientes <------</h1>
+        <p style="margin-bottom: 50px">¡Gracias por dejarnos ser parte de tus momentos especiales!</p>
+        <div class="review">
+            <h3>Mariana R. – Cumpleaños Infantil</h3>
+            <div class="stars">★★★★★</div>
+            <p>“Contraté al payaso Toti para el cumpleaños de mi hija y fue la mejor decisión. ¡Los niños no pararon de
+                reír! Todo súper profesional y muy divertido. ¡Recomendadísimos!”</p>
+        </div>
+
+        <div class="review">
+            <h3>Carlos M. – Evento Escolar</h3>
+            <div class="stars">★★★★★</div>
+            <p>“Nos ayudaron a organizar una kermés escolar. Todo llegó a tiempo: inflables, carpas, sonido... ¡todo
+                perfecto! Y lo mejor, la atención al cliente: rápida y muy amable.”</p>
+        </div>
+
+        <div class="review">
+            <h3>Alejandra G. – Fiesta Familiar</h3>
+            <div class="stars">★★★★★</div>
+            <p>“La decoración temática fue bellísima. Parecía sacada de Pinterest. ¡Y el show del payaso fue excelente!
+                Sin duda volveré a contratarles.”</p>
+        </div>
+
+        <div class="review">
+            <h3>Jonathan T. – Evento Empresarial</h3>
+            <div class="stars">★★★★☆</div>
+            <p>“Tuvimos un pequeño inconveniente con el horario, pero lo resolvieron rápidamente. El animador fue muy
+                carismático y logró conectar con todo el público. Buen servicio.”</p>
+        </div>
+
+        <div class="review">
+            <h3>Claudia S. – Baby Shower</h3>
+            <div class="stars">★★★★★</div>
+            <p>“Todo muy bien organizado. El servicio de catering, la música, la animación, ¡todo estuvo a la altura!
+                Mis invitados quedaron encantados. ¡Gracias por hacer ese día tan especial!”</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Evanna Web | Todos los derechos reservados
+    </footer>
+
+</body>
+
+</html>

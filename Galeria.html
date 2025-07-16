@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/Global.css">
+    <link rel="stylesheet" href="./CSS/Navbar.css">
+    <link rel="stylesheet" href="./CSS/Footer.css">
+    <link rel="stylesheet" href="./CSS/Inicio.css">
+    <link rel="stylesheet" href="./CSS/ModoOscuro.css">
+    <link rel="stylesheet" href="./CSS/Galeria.css">
+</head>
+<body>
+    <header>
+        <button id="btn-modo-oscuro" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">🌙 Modo
+            Oscuro</button>
+        <script src="./JS/ModoOscuro.js"></script>
+        <a href="index.html" class="logo">
+            <img src="./Assets/Logo/Evana_Navbar.PNG" alt="Logo-Evana">
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a>Servicios</a>
+                    <ul>
+                        <li><a href="Servicio_Alquiler.html">Alquiler</a></li>
+                        <li><a href="Servicio_Animacion.html">Animacion</a></li>
+                        <li><a href="Servicio_Decoracion.html">Decoración</a></li>
+                    </ul>
+                </li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+    <div class="galeria-container">
+        <div class="galeria-header">
+            <h1>Galería de Eventos</h1>
+            <p>Aquí puedes ver todas las fiestas que hemos organizado. Cada evento es especial y único.</p>
+        </div>
+
+        <!-- Se eliminó la barra de filtros -->
+
+        <div class="galeria-grid">
+            <div class="galeria-item" data-categoria="bodas">
+                <div class="imagen-placeholder">
+                    <img src="./Assets/Img/bodasimage.jpg" alt="image" width="100%">
+                </div>
+                <div class="item-info">
+                    <span class="categoria">Bodas</span>
+                    <h3>Boda en Jardín</h3>
+                    <p>Una boda bonita al aire libre con flores y luces.</p>
+                </div>
+            </div>
+
+            <div class="galeria-item" data-categoria="cumpleanos">
+                <div class="imagen-placeholder">
+                    <img src="./Assets/Img/quinceimage.jpeg" alt="image" width="100%">
+                </div>
+                <div class="item-info">
+                    <span class="categoria">Cumpleaños</span>
+                    <h3>Fiesta de 15 Años</h3>
+                    <p>Una fiesta divertida con globos dorados.</p>
+                </div>
+            </div>
+
+            <div class="galeria-item" data-categoria="infantil">
+                <div class="imagen-placeholder">
+                    <img src="./Assets/Img/princesasimage.jpg" alt="image" width="100%">
+                </div>
+                <div class="item-info">
+                    <span class="categoria">Niños</span>
+                    <h3>Fiesta de Princesas</h3>
+                    <p>Una fiesta mágica para niñas con tema de princesas.</p>
+                </div>
+            </div>
+
+            <div class="galeria-item" data-categoria="corporativo">
+                <div class="imagen-placeholder">
+                    <img src="./Assets/Img/finimage.jpg" alt="image" width="100%">
+                </div>
+                <div class="item-info">
+                    <span class="categoria">Empresas</span>
+                    <h3>Evento de Fin de Año</h3>
+                    <p>Celebración de empresa con comida y entretenimiento.</p>
+                </div>
+            </div>
+
+            <div class="galeria-item" data-categoria="decoracion">
+                <div class="imagen-placeholder">
+                    <img src="./Assets/Img/centroimage.jpg" alt="image" width="100%">
+                </div>
+                <div class="item-info">
+                    <span class="categoria">Decoración</span>
+                    <h3>Centro de Mesa</h3>
+                    <p>Arreglos florales para decorar mesas.</p>
+                </div>
+            </div>
+
+            <div class="galeria-item" data-categoria="bodas">
+                <div class="imagen-placeholder">
+                    <img src="./Assets/Img/rusticimage.jpg" alt="image" width="100%">
+                </div>
+                <div class="item-info">
+                    <span class="categoria">Bodas</span>
+                    <h3>Boda Rústica</h3>
+                    <p>Boda en el campo con decoración natural.</p>
+                </div>
+            </div>
+
+            <div class="galeria-item" data-categoria="cumpleanos">
+                <div class="imagen-placeholder">
+                    <img src="./Assets/Img/tematicimage.png" alt="image" width="100%">
+                </div>
+                <div class="item-info">
+                    <span class="categoria">Cumpleaños</span>
+                    <h3>Cumpleaños Temático</h3>
+                    <p>Fiesta personalizada con el tema que quieras.</p>
+                </div>
+            </div>
+
+            <div class="galeria-item" data-categoria="infantil">
+                <div class="imagen-placeholder">
+                    <img src="./Assets/Img/heroesimage.jpg" alt="image" width="100%">
+                </div>
+                <div class="item-info">
+                    <span class="categoria">Niños</span>
+                    <h3>Fiesta de Superhéroes</h3>
+                    <p>Aventura divertida para niños con disfraces.</p>
+                </div>
+            </div>
+
+            <div class="galeria-item" data-categoria="decoracion">
+                <div class="imagen-placeholder">
+                    <img src="./Assets/Img/noticiasimage.jpg" alt="image" width="100%">
+                </div>
+                <div class="item-info">
+                    <span class="categoria">Decoración</span>
+                    <h3>Noticias</h3>
+                    <p>Decoración con cosas antiguas y bonitas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-form">
+                <h3>Contáctanos</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label name="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Número de teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de contacto"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">Asunto</label>
+                        <textarea name="" id="" placeholder="Ingrese el asunto de la MEGA-Fiesta"></textarea>
+                    </div>
+                    <a href="Agradec.html" class="submit-btn">Enviar</a>
+                </form>
+            </div>
+
+            <div class="footer-info">
+                <img src="./Assets/Logo/Evana_Navbar.PNG" class="img-footer">
+                <p>Tu empresa de confianza para la organización de cualquier MEGA-Evento Inolvidable, alquiler de
+                    equipos y decoración.</p>
+                <p>Calle Rodriguez Ballón 207 - A, Miraflores, Arequipa, Perú</p>
+                <p>+51 963 023 181s</p>
+                <p>Fiesta_Evana@evana.com</p>
+                <div class="social-icons">
+                    <a><img src="./Assets/Iconos/wsp.png" /> </a>
+                    <a><img src="./Assets/Iconos/facebook.png" /></a>
+                    <a><img src="./Assets/Iconos/instagram.png" /></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Evana S.A.C. - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

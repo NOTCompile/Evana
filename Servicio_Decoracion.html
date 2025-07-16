@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/Global.css">
+    <link rel="stylesheet" href="./CSS/Navbar.css">
+    <link rel="stylesheet" href="./CSS/Footer.css">
+    <link rel="stylesheet" href="./CSS/Inicio.css">
+    <link rel="stylesheet" href="./CSS/Servicio_Decoracion.css">
+    <link rel="stylesheet" href="./CSS/ModoOscuro.css">
+
+    <title>EVANA</title>
+</head>
+
+<body>
+    <header>
+        <button id="btn-modo-oscuro" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">🌙 Modo Oscuro</button>
+        <script src="./JS/ModoOscuro.js"></script>
+        <a href="index.html" class="logo">
+            <img src="./Assets/Logo/Evana_Navbar.PNG" alt="Logo-Evana">
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a>Servicios</a>
+                    <ul>
+                        <li><a href="Servicio_Alquiler.html">Alquiler</a></li>
+                        <li><a href="Servicio_Animacion.html">Animacion</a></li>
+                        <li><a href="Servicio_Decoracion.html">Decoración</a></li>
+                    </ul>
+                </li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="decoracion">
+            <h1>Decoración para Fiestas y de Temporada</h1>
+            <p>Creamos ambientes únicos que transforman cualquier espacio en un escenario de ensueño.
+                Nuestra decoración es 100% personalizada, adaptada a tus gustos, temática y tipo de evento.</p>
+            <div class="card-horizontal">
+                <img src="./Assets/Img/D_tematica_dos.png" alt="">
+                <div class="card-texto">
+                    <h3>Decoración para Fiestas Temáticas</h3>
+                    <p>Ambientamos todo según la ocasión, edad y gustos del cliente.</p>
+                    <li>
+                        Cumpleaños infantiles y juveniles: personajes, superhéroes, princesas, animales, colores
+                        favoritos, etc.
+                    </li>
+                    <li>
+                        Quince años y bodas: estilos boho, romántico, vintage, minimalista, glam, rústico, etc.
+                    </li>
+                    <li>
+                        Graduaciones, baby showers, revelaciones de género, aniversarios y más.
+                    </li>
+                    <p>Incluye decoración de mesa principal, fondos, globos, arreglos, papelería personalizada, centros
+                        de mesa, bienvenida y más..</p>
+                </div>
+            </div>
+            <div class="card-horizontal">
+                <div class="card-texto">
+                    <h3>Decoración de Temporada</h3>
+                    <p>Evana cuenta desde modelos elegantes y clásicos hasta temáticos y modernos, adaptados a tu
+                        evento.</p>
+                    <li>Sillas Tiffany, Avant Garde, plegables o infantiles</li>
+                    <li>Mesas redondas, rectangulares y altas</li>
+                    <li>Muebles lounge, puff, barras y mesas tipo cóctel</li>
+                    <p>Todos los muebles están impecables y pueden personalizarse con fundas, caminos de mesa, manteles
+                        y centros decorativos.</p>
+                </div>
+                <img src="./Assets/Img/N_Tematica.png" alt="">
+            </div>
+            <p>
+                Usamos materiales de calidad, atención al detalle y mucho estilo para lograr un ambiente mágico y
+                memorable.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-form">
+                <h3>Contáctanos</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label name="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Número de teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de contacto"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">Asunto</label>
+                        <textarea name="" id="" placeholder="Ingrese el asunto de la MEGA-Fiesta"></textarea>
+                    </div>
+                    <a href="Agradec.html" class="submit-btn">Enviar</a>
+                </form>
+            </div>
+
+            <div class="footer-info">
+                <img src="./Assets/Logo/Evana_Navbar.PNG" class="img-footer">
+                <p>Tu empresa de confianza para la organización de cualquier MEGA-Evento Inolvidable, alquiler de
+                    equipos y decoración.</p>
+                <p>Calle Rodriguez Ballón 207 - A, Miraflores, Arequipa, Perú</p>
+                <p>+51 963 023 181s</p>
+                <p>Fiesta_Evana@evana.com</p>
+                <div class="social-icons">
+                    <a><img src="./Assets/Iconos/wsp.png" /> </a>
+                    <a><img src="./Assets/Iconos/facebook.png" /></a>
+                    <a><img src="./Assets/Iconos/instagram.png" /></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Evana S.A.C. - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

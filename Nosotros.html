@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/CSS/Global.css">
+    <link rel="stylesheet" href="/CSS/Navbar.css">
+    <link rel="stylesheet" href="/CSS/Footer.css">
+    <link rel="stylesheet" href="/CSS/Inicio.css">
+    <link rel="stylesheet" href="/CSS/Nosotros.css">
+    <link rel="stylesheet" href="./CSS/ModoOscuro.css">
+
+    <title>EVANA</title>
+</head>
+
+<body>
+    <header>
+        <button id="btn-modo-oscuro" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">🌙 Modo Oscuro</button>
+        <script src="/JS/ModoOscuro.js"></script>
+        <a href="index.html" class="logo">
+            <img src="/Assets/Logo/Evana_Navbar.PNG" alt="Logo-Evana">
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a>Servicios</a>
+                    <ul>
+                        <li><a href="Servicio_Alquiler.html">Alquiler</a></li>
+                        <li><a href="Servicio_Animacion.html">Animacion</a></li>
+                        <li><a href="Servicio_Decoracion.html">Decoración</a></li>
+                    </ul>
+                </li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="titulo">
+            <h1>Evana</h1>
+        <p>Crea momentos inolvidables</p>
+        </div>
+        <div class="mis-vis">
+            <div class="content-mis-vis">
+                <h3>Mision</h3>
+                <p>
+                    Ofrecer soluciones integrales que incluyen alquiler de mobiliario, decoración temática y animación profesional, adaptadas a cada cliente y ocasión, garantizando un servicio de calidad, puntualidad y calidez humana en cada celebración.
+                </p>
+            </div>
+            <div class="content-mis-vis">
+                <h3>Vision</h3>
+                <p>
+                    Ser la empresa líder en organización y animación de eventos en Arequipa, reconocida por crear experiencias únicas, emotivas y llenas de alegría, que superen las expectativas de nuestros clientes y se conviertan en recuerdos inolvidables.
+                </p>
+            </div>
+        </div>
+        <div class="text">
+            <h2>Nuestros Colaboradores</h2>
+        </div>
+        <div class="clientes">
+            <div class="colaborador">
+                <img src="/Assets/Img/N_Colaborador1.jpg" alt="">
+                <p>Payasos</p>
+            </div>
+            <div class="colaborador">
+                <img src="/Assets/Img/N_Colaborador2.jpg" alt="">
+                <p>Limosinas CUCUTA</p>
+            </div>
+            <div class="colaborador">
+                <img src="/Assets/Img/N_Colaborador3.jpg" alt="">
+                <p>HokyPoky</p>
+            </div>
+            <div class="colaborador">
+                <img src="/Assets/Img/N_Colaborador4.png" alt="">
+                <p>NOTCompile</p>
+            </div>      
+            <div class="colaborador">
+                <img src="/Assets/Img/N_Colaborador5.jpg" alt="">
+                <p>Gato miau miau</p>
+            </div>      
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-form">
+                <h3>Contáctanos</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label name="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Número de teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de contacto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dni">Asunto</label>
+                        <textarea name="" id="" placeholder="Ingrese el asunto de la MEGA-Fiesta"></textarea>
+                    </div>
+                    <a href="Agradec.html" class="submit-btn">Enviar</a>
+                </form>
+            </div>
+
+            <div class="footer-info">
+                <img src="/Assets/Logo/Evana_Navbar.PNG" class="img-footer">
+                <p>Tu empresa de confianza para la organización de cualquier MEGA-Evento Inolvidable, alquiler de equipos y decoración.</p>
+                <p>Calle Rodriguez Ballón 207 - A, Miraflores, Arequipa, Perú</p>
+                <p>+51 963 023 181s</p>
+                <p>Fiesta_Evana@evana.com</p>
+                <div class="social-icons">
+                    <a><img src="/Assets/Iconos/wsp.png" /> </a>
+                    <a><img src="/Assets/Iconos/facebook.png" /></a>
+                    <a><img src="/Assets/Iconos/instagram.png" /></i></a>
+                </div>
+            </div>            
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Evana S.A.C. - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

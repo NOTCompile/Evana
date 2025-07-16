@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/CSS/Pagar.css">
+
+    <title>EVANA</title>
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Datos de Tarjeta</h2>
+        
+        <label>Numero:</label>
+        <input type="text" id="numero" maxlength="16">
+        
+        <label>Nombre:</label>
+        <input type="text" id="nombre">
+        
+        <label>Fecha:</label>
+        <input type="text" id="fecha" placeholder="MM/AA" maxlength="5">
+        
+        <label>CVV:</label>
+        <input type="text" id="cvv" maxlength="3">
+        
+        <button onclick="generar()">Generar</button>
+        <button onclick="limpiar()">Guardar</button>
+        <button onclick="mostrar()">Ver Datos</button>
+        
+        <div class="datos" id="resultado" style="display:none;">
+            <div id="info"></div>
+        </div>
+    </div>
+<script src="JS/Pagar.js"></script>
+</body>
+</html>

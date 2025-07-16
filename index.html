@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./CSS/Global.css">
+    <link rel="stylesheet" href="./CSS/Navbar.css">
+    <link rel="stylesheet" href="./CSS/Footer.css">
+    <link rel="stylesheet" href="./CSS/Inicio.css">
+    <link rel="stylesheet" href="./CSS/ModoOscuro.css">
+
+    <title>EVANA</title>
+    
+    <style>
+        /* Estilos para el botón de reserva */
+        .btn-reserva {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
+            text-align: center;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn-reserva:hover {
+            background: linear-gradient(45deg, #ee5a52, #ff6b6b);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
+        }
+
+        .btn-reserva:active {
+            transform: translateY(0);
+        }
+
+        /* Contenedor para los botones */
+        .botones-accion {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            .botones-accion {
+                flex-direction: column;
+            }
+            
+            .btn-reserva {
+                width: 100%;
+                max-width: 250px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <button id="btn-modo-oscuro" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">🌙 Modo
+            Oscuro</button>
+        <script src="./JS/ModoOscuro.js"></script>
+        <a href="index.html" class="logo">
+            <img src="./Assets/Logo/Evana_Navbar.PNG" alt="Logo-Evana">
+        </a>
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a>Servicios</a>
+                    <ul>
+                        <li><a href="Servicio_Alquiler.html">Alquiler</a></li>
+                        <li><a href="Servicio_Animacion.html">Animacion</a></li>
+                        <li><a href="Servicio_Decoracion.html">Decoración</a></li>
+                    </ul>
+                </li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Galeria.html">Galeria</a></li>
+                c
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="contenedorInicio">
+            <div class="img-bg">
+                <div class="logo">
+                    <img src="./Assets/Logo/Evana_Navbar.PNG" alt="">
+                </div>
+                <div class="mensaje">
+                    <p>Crea momentos inolvidables</p>
+                    <div class="botones-accion">
+                        <a href="Contacto.html">Contactanos</a>
+                        <a href="Reserva.html" class="btn-reserva">Reserva</a>
+                    </div>
+                </div>
+            </div>
+            <h3 class="semi-titulo">Nuestros servicios</h3>
+            <div class="servicios">
+                <div class="card">
+                    <img src="./Assets/Img/A_limosina.jpg" alt="">
+                    <h3>Alquiler de Equipos y Mobiliario</h3>
+                    <p>Dale el toque perfecto a tu evento con todo lo que necesitas para impresionar.
+                        <br>Ofrecemos el alquiler de:
+                    </p>
+                    <li>Limosinas y carruajes para entradas inolvidables.</li>
+                    <li>Sillas, mesas y mobiliario elegantes o temáticos.</li>
+                    <li>Toldos, pérgolas y estructuras para eventos al aire libre, de día o de noche.</li>
+                    <p>Nos adaptamos a tu estilo y al espacio. ¡Tú sueñas, nosotros montamos!</p>
+                    <div style="text-align: center; margin-top: 15px;">
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Assets/Img/S_animadorInfantil.png" alt="">
+                    <h3>Animación y Desarrollo de Eventos</h3>
+                    <p>Nos encargamos de hacer que tu evento sea único, divertido e inolvidable.
+                        <br>Nuestro equipo de animadores profesionales organiza:
+                    </p>
+                    <li>Juegos interactivos</li>
+                    <li>Shows en vivo</li>
+                    <li>Dinámicas para grandes y chicos</li>
+                    <li>Coordinación general del evento</li>
+                    <p>Desde fiestas infantiles hasta celebraciones formales, ¡hacemos que cada momento brille!</p>
+                    <div style="text-align: center; margin-top: 15px;">
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./Assets/Img/D_tematica_uno.png" alt="">
+                    <h3> Decoración para Fiestas y Temporada</h3>
+                    <p>Creamos ambientes mágicos para cada ocasión.
+                        <br>Diseñamos decoraciones personalizadas para:
+                    </p>
+                    <li>Cumpleaños, graduaciones, bodas, baby showers.</li>
+                    <li>Temporadas especiales como Navidad, Halloween, Año Nuevo y más.</li>
+                    <p>Cada detalle está pensado para sorprender, emocionar y dejar huella.</p>
+                    <div style="text-align: center; margin-top: 15px;">
+                    </div>
+                </div>
+            </div>
+            <a style="margin-bottom: 50px" href="Reserva.html" class="btn-reserva">Reservar Alquiler</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="contact-form">
+                <h3>Contáctanos</h3>
+                <form id="contact-form">
+                    <form id="contact-form" action="Agradec.html" method="get">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese sus nombres" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Número de teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número de contacto"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <textarea id="asunto" name="asunto" placeholder="Ingrese el asunto de la MEGA-Fiesta"
+                                required></textarea>
+                        </div>
+
+                        <div class="mensaje_footer">
+                            <button type="button" class="btn-enviar"
+                                onclick="window.location.href='Agradec.html'">Enviar</button>
+                        </div>
+                    </form>
+
+
+                </form>
+            </div>
+
+            <div class="footer-info">
+                <img src="/Assets/Logo/Evana_Navbar.PNG" class="img-footer">
+                <p>Tu empresa de confianza para la organización de cualquier MEGA-Evento Inolvidable, alquiler de
+                    equipos y decoración.</p>
+                <p>Calle Rodriguez Ballón 207 - A, Miraflores, Arequipa, Perú</p>
+                <p>+51 963 023 181s</p>
+                <p>Fiesta_Evana@evana.com</p>
+                <div class="social-icons">
+                    <a href="https://ar.khanacademy.org/" target="_blank">
+                        <img src="/Assets/Iconos/wsp.png" alt="Ir a Facebook" />
+                    </a>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="/Assets/Iconos/facebook.png" />
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <img src="/Assets/Iconos/instagram.png" />
+                    </a>
+                </div>
+                <div class="terms_and_conditions">
+                    <a href="Terminos_cond.html" target="_blank">
+                        Terminos y condiciones
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Evana S.A.C. - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
